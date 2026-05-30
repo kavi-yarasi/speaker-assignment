@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.microphone {
+  width: 300px;
+  height: 300px;
+  background-color: #402D2C;
+  position: relative;
+}
+
+.speaker {
+  position: relative;
+  width: 100%;
+  left: 60%;
+  transform: translateX(-50%);
+  height: 100%;
+}
+
+.head {
+  width: 50px;
+  height: 30px;
+  background-color: #93F5F5;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.triangle {
+  width: 0;
+  border-right: 100px solid #93F5F5;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.stick {
+  width: 30px;
+  height: 115px;
+  background-color: #402D2C;
+  position: absolute;
+  left: 95px;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.ring {
+  border: 2px solid #93F5F5;
+  border-radius: 50%;
+}
+
+.ring-sm {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 95px;
+}
+
+.ring-md {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 80px;
+}
+
+.ring-lg {
+    width: 105px;
+    height: 105px;
+    position: absolute;
+    left: 68px;
+}
