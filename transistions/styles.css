@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: coral;
+}
+
+.sample-btns
+{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid grey;
+    background-color: white;
+}
+
+.sample{
+    padding: 1rem;
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid grey;
+    position: relative;
+}
+
+button
+{
+    position: relative;
+    overflow: hidden;
+    padding: 0.5rem;
+}
+
+button span
+{
+    position: relative;
+    z-index: 10;
+}
+
+button:hover span
+{
+    color: white;
+}
+
+
+#btn1::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  transition: all 1s;
+  z-index: 0;
+}
+
+#btn1:hover::before {
+  left: 0;
+  background-color: rgba(0, 255, 0);
+}
+
+#btn1::after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  transition: all 1s;
+  z-index: 0;
+}
+
+#btn1:hover::after {
+  right: 0;
+  background-color: rgba(0, 255, 0);
+}
+
+#btn2::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  transition: all 1s;
+  z-index: 0;
+}
+
+#btn2:hover::before {
+  bottom: 0;
+  background-color: rgba(0, 255, 0);
+}
+
+#btn3::before {
+  content: "";
+  width: 2px;
+  height: 200%;
+  position: absolute;
+  left: -10%;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  transition: left 2s;
+  z-index: 0;
+}
+
+#btn3:hover::before {
+  left: 200%;
+  background-color: rgba(0, 255, 0);
+}
+
+#btn4::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.6s ease;
+  z-index: 0;
+}
+
+#btn4:hover::before {
+  width: 250%;
+  height: 250%;
+  left: -75%;
+  top: -75%;
+  border-radius: 50%;
+  background-color: rgba(0, 255, 0);
+}
+
+
