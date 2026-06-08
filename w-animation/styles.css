@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#outerDiv
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 1px solid grey;
+    animation: imgAnimation 8s linear 1s infinite;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    border-radius: inherit;
+}
+
+@keyframes imgAnimation {
+    0% {
+        top: 5vh;
+        left: 0vw;
+        border-radius: 5px;
+    }
+
+    25%{
+        top: 80vh;
+        left: 25vw;
+        border-radius: 30px;
+        transform: rotate(-25deg);
+    }
+
+    50%
+    {
+        top: 5vh;
+        left: 50vw;
+        border-radius: 5px;
+        transform: rotate(25deg);
+    }
+
+    75%{
+        top: 80vh;
+        left: 75vw;
+        border-radius: 30px;
+        transform: rotate(-25deg);
+    }
+    100%{
+        top: 5vh;
+        left: 90vw;
+        border-radius: 5px;
+        transform: rotate(25deg);
+    }
+}
