@@ -28,31 +28,38 @@ img
         border-radius: 5px;
     }
 
-    25%{
+    22% { border-radius: 5px; }
+    25% {
         top: 80vh;
         left: 25vw;
-        border-radius: 30px;
+        border-radius: 50px;
         transform: rotate(-25deg);
     }
+    28% { border-radius: 5px; }
 
-    50%
-    {
+    47% { border-radius: 5px; }
+    50% {
         top: 5vh;
         left: 50vw;
-        border-radius: 5px;
+        border-radius: 50px;
         transform: rotate(25deg);
     }
+    53% { border-radius: 5px; }
 
-    75%{
+    72% { border-radius: 5px; }
+    75% {
         top: 80vh;
         left: 75vw;
-        border-radius: 30px;
+        border-radius: 50px;
         transform: rotate(-25deg);
     }
-    100%{
+    78% { border-radius: 5px; }
+
+    97% { border-radius: 5px; }
+    100% {
         top: 5vh;
         left: 90vw;
-        border-radius: 5px;
+        border-radius: 50px;
         transform: rotate(25deg);
     }
 }
