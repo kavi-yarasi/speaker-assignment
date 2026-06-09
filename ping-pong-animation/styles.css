@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+    background-color: rebeccapurple;
+}
+
+.table
+{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+    background-color: #FFF;
+    height: 50%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+.left
+{
+    position: absolute;
+    width: 40px;
+    left: 0;
+    height: 150px;
+    background-color: black;
+    animation: leftAnimation 3s linear infinite alternate;
+}
+
+.right
+{
+    position: absolute;
+    width: 40px;
+    height: 150px;
+    right: 0;
+    background-color: black;
+    animation: rightAnimation 3s linear infinite alternate;
+}
+
+
+.ball
+{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    animation: ballAnimation 3s linear infinite alternate;
+}
+
+@keyframes leftAnimation {
+    from {
+        top: 1%;
+    }
+
+    to{
+        top: 50%;
+    }
+}
+
+@keyframes rightAnimation {
+     from {
+        top: 50%;
+    }
+
+    to{
+        top: 1%;
+    }
+}
+
+@keyframes ballAnimation
+{
+    from
+    {
+        top: 50%;
+        left: 5%;
+    }
+    to{
+        top: 50%;
+        left: 85%;
+    }
+}

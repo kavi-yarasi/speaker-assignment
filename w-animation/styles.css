@@ -4,62 +4,81 @@
     box-sizing: border-box;
 }
 
-#outerDiv
+img
 {
     width: 100px;
     height: 100px;
+    padding: 2px;
+    border-radius: 1rem;
     position: absolute;
-    border: 1px solid grey;
+    border: 1px solid black;
     animation: imgAnimation 8s linear 1s infinite;
 }
 
-img
-{
-    width: 100%;
-    height: 100%;
-    padding: 2px;
-    border-radius: inherit;
-}
-
 @keyframes imgAnimation {
-    0% {
-        top: 5vh;
-        left: 0vw;
-        border-radius: 5px;
-    }
+    /* 0% {
+        top: 0;
+        left: 0;
+        border-radius: 5rem;
+        transform: rotate(0); */
+    /* }
 
-    22% { border-radius: 5px; }
     25% {
-        top: 80vh;
-        left: 25vw;
-        border-radius: 50px;
-        transform: rotate(-25deg);
+        top: calc(100vh - 100px);
+        left: calc(50vw - 250px);
+        border-radius: 50%;
+        transform: rotate(60deg);
     }
-    28% { border-radius: 5px; }
 
-    47% { border-radius: 5px; }
     50% {
-        top: 5vh;
-        left: 50vw;
-        border-radius: 50px;
-        transform: rotate(25deg);
+        top: 0;
+        left: calc(50vw - 300px);
+        border-radius: 50rem;
+        transform: rotate(120deg);
     }
-    53% { border-radius: 5px; }
 
-    72% { border-radius: 5px; }
     75% {
-        top: 80vh;
-        left: 75vw;
-        border-radius: 50px;
-        transform: rotate(-25deg);
+        top: calc(100vh - 100px);
+        left: calc(100vw - 450px);
+        border-radius: 50%;
+        transform: rotate(180deg);
     }
-    78% { border-radius: 5px; }
 
-    97% { border-radius: 5px; }
     100% {
-        top: 5vh;
-        left: 90vw;
-        border-radius: 50px;
-        transform: rotate(25deg);
+        top: 0;
+        left: calc(100vw - 500px);
+        border-radius: 5rem;
+        transform: rotate(240deg);
+    } */
+
+    0%{
+        top: 0;
+        left: 0;
+        border-radius: 1rem;
+        transform: rotate(0);
+    }
+    25%{
+        top: calc(100% - 100px);
+        left: 300px;
+        transform: rotate(90deg);
+        border-radius: 50%;
+    }
+    50%{
+        top: 0;
+        left: 600px;
+        transform: rotate(180deg);
+        border-radius: 1rem;
+    }
+    75%{
+         top: calc(100% - 100px);
+        left: 900px;
+        transform: rotate(270deg);
+        border-radius: 50%;
+    }
+    100%{
+        top: 0;
+        left: 1200px;
+        transform: rotate(360deg);
+        border-radius: 1rem;
     }
 }
